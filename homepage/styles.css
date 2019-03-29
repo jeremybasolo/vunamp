@@ -1,0 +1,58 @@
+body {
+    background: #222;
+}
+
+#main {
+    font-family: 'Ubuntu Mono', sans-serif;
+    max-width: 680px;
+    margin: 1em auto;
+}
+
+img {
+    max-width: 270px;
+    margin: .5em 0;
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+}
+
+h2 {
+        min-height: 85px;
+
+}
+
+.terminal {
+    margin-top: 100px;
+    padding: 2em;
+    background: #111;
+    color: #4AF626;
+}
+
+li {
+    list-style: square;
+}
+
+a {
+    color: #4AF626;
+}
+
+hr {
+    border-top: 1px dashed #4AF626;
+    border-bottom: 0;
+}
+
+input {
+    background: none;
+    width: 100%;
+    font-size: 1em;
+    color: #4AF626;
+    border: 0;
+    font-family: 'Ubuntu Mono', sans-serif;
+    outline: none;
+}
+
+p {
+    font-style: italic;
+}

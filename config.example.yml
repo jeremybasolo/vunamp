@@ -1,0 +1,7 @@
+nfs: false
+folders:
+    - host: '../Sites/'
+      guest: '/home/vagrant/sites/'
+ports:
+    - host: 8080
+      guest: 80

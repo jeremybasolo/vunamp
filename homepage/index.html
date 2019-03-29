@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>LAMP UBUNTU 18.04</title>
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
+	<link href="animate.css" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="main">
+		<div class="terminal animated fadeInUp faster">
+			<h2>
+				ubuntu 18.04,
+				nginx 1.14,
+				apache 2.4
+				<br>
+				php 7.3,
+				php 5.6,
+				mysql 5.7,
+				phpmyadmin
+				<br>
+				composer,
+				wp-cli,
+				git
+			</h2>
+			<hr>
+			<div><a target="_blank" href="phpmyadmin/?pma_username=root&pma_password=vagrant">PhpMyAdmin</a> | <a target="_blank" href="http://localhost:4200/">Shell</a> | <a target="_blank" href="info.php">PHP 7.3</a> | <a target="_blank" href="info5.php">PHP 5.6</a></div>
+			<p>MySQL root password: <input readonly value="vagrant"></p>
+			<p>Enable a virtual host: <input readonly value="sudo a2ensite example.conf"><input readonly value="sudo service apache2 reload"></p>
+			<p>Watch for changes on apache2 error log: <input readonly value="sudo tail -f /var/log/apache2/error.log"></p>
+			<p>Dump all databases in a SQL file:<br><input readonly value="mysqldump -u root -p --all-databases > /home/vagrant/sites/alldb.sql"></p>
+	</div>
+    </div>
+	<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="t.min.js"></script>
+	<script>
+		$("input").click(function () {
+				$(this).select();
+		});
+		$('h2').t({
+			speed: 10,
+			blink: false,
+			caret: false
+		});
+	</script>
+</body>
+</html>
