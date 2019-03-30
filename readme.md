@@ -26,7 +26,7 @@ vagrant up
 If you haven't changed the default http port, you should be able to access the homepage in a browser:
 http://localhost:8080
 
-![](home/overview.jpg?raw=true "")
+![Overview](homepage/overview.jpg)
 
 ## Installing new sites
 
