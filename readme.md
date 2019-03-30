@@ -18,13 +18,15 @@ For optimal performances, install these plugins:
 
 Clone this repository on your computer. Create a config.yml file, based on config.example.yml, and customize it to your own needs (default http port is 8080 and a sites folder is shared to the box).
 
-When done, open the directory in your favourite terminal and run:
+Open the directory in your favourite terminal and run:
 ```
 vagrant up
 ```
 
-When done, if you haven't changed the default http port, you should be able to access the homepage in a browser:
+If you haven't changed the default http port, you should be able to access the homepage in a browser:
 http://localhost:8080
+
+![](home/overview.jpg?raw=true "")
 
 ## Installing new sites
 
