@@ -2,7 +2,7 @@
 .DS_Store
 config.yml
 ubuntu-bionic-18.04-cloudimg-console.log
-vhosts/*
-!vhosts/dev.conf
-!vhosts/sample-php5.6.conf
-!vhosts/sample-php7.3.conf
+vhosts_apache/*
+!vhosts_apache/dev.conf
+vhosts_nginx/*
+!vhosts_nginx/dev

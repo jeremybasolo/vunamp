@@ -40,6 +40,7 @@ sudo sh -c "sudo echo 'Include /etc/phpmyadmin/apache.conf' >> /etc/apache2/apac
 
 # Fix issue with phpmyadmin under php 7.3
 sudo sed -i "s/|\s*\((count(\$analyzed_sql_results\['select_expr'\]\)/| (\1)/g" /usr/share/phpmyadmin/libraries/sql.lib.php
+sudo sed -i "s/&& count(\$options) > 0//g" /usr/share/phpmyadmin/libraries/plugin_interface.lib.php
 
 # Restart apache2
 sudo a2dissite 000-default
@@ -51,6 +52,7 @@ sudo service apache2 restart
 sudo apt-get -y install nginx
 rm /etc/nginx/sites-enabled/default
 ln -s /etc/nginx/sites-available/dev /etc/nginx/sites-enabled/dev 
+echo "client_max_body_size 256M;" >> /etc/nginx/conf.d/dev.conf
 service nginx restart
 
 # Install composer and wp-cli
