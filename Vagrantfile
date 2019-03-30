@@ -34,7 +34,11 @@ Vagrant.configure("2") do |config|
   end
 
   # Provision
+  $script = <<-SCRIPT
+  service apache2 restart
+  service nginx restart
+  SCRIPT
   config.vm.provision "shell", path: "provision.sh"
-  config.vm.provision "shell", inline: "service apache2 restart", run: "always"
+  config.vm.provision "shell", inline: $script, run: "always"
 
 end

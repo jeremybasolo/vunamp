@@ -16,15 +16,17 @@ img {
 h1 {
     font-size: 3em;
     text-align: center;
+    margin: 10px 0;
 }
 
 h2 {
-        min-height: 85px;
-
+    min-height: 85px;
+    margin: 0;
+    font-size: 1.25em;
 }
 
 .terminal {
-    margin-top: 100px;
+    margin-top: 0px;
     padding: 2em;
     background: #111;
     color: #4AF626;
@@ -41,6 +43,7 @@ a {
 hr {
     border-top: 1px dashed #4AF626;
     border-bottom: 0;
+    margin-bottom: 20px;
 }
 
 input {
