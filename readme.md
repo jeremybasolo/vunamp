@@ -1,6 +1,6 @@
 # VUNAMP
 
-VUNAMP is a php development stack based on Vagrant, ubuntu, nginx, apache, php and mysql. It includes two versions of php (currently 7.3 and 5.6), phpmyadmin and shellinabox (to access the box in a terminal from your browser).
+VUNAMP is a php development stack based on Vagrant, ubuntu, nginx, apache, php and mysql. It includes two versions of php (currently 7.3 and 5.6), phpmyadmin, shellinabox (to access the box in a terminal from your browser), composer, wp-cli and git.
 
 It works on any environement that supports virtualbox and vagrant. Basic linux knowledge is necessary.
 
