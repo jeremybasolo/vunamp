@@ -92,13 +92,13 @@ To switch to php 5.6, just amend the **fastcgi_pass** line in the **location** b
 
 <VirtualHost *:8080>
 	
-	ServerName montmirail.vagrant 
+	ServerName example.test
 	ServerAdmin webmaster@localhost
-	DocumentRoot /home/vagrant/sites/montmirail
+	DocumentRoot /home/vagrant/sites/example
 	ErrorLog ${APACHE_LOG_DIR}/error.log
 	CustomLog ${APACHE_LOG_DIR}/access.log combined
 
-	<Directory "/home/vagrant/sites/montmirail">
+	<Directory "/home/vagrant/sites/example">
         Options Indexes FollowSymLinks
         Require all granted
         AllowOverride All
